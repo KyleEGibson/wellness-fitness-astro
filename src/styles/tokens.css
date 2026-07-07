@@ -1,0 +1,38 @@
+/*
+ * Per-site design tokens. Every niche site overrides this file with its own
+ * palette + type choices. global.css consumes these variables but never
+ * defines color/font values itself — keep that separation so the shared
+ * template can be updated without fighting site-specific branding.
+ */
+:root {
+  /* White base, soft blue + muted green energy, charcoal text */
+  --bg: #ffffff;
+  --bg-alt: #f5f8fa;
+  --surface: #ffffff;
+  --text: #262b2e;
+  --text-secondary: #676f74;
+  --border: #e2e8ea;
+
+  --accent: #5b8fa8;
+  --accent-dark: #3f6f86;
+  --accent-soft: #e8f1f5;
+
+  --gold: #6f9c7c;
+
+  /* Shape + elevation */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow: 0 8px 24px rgba(20, 30, 35, 0.06);
+  --shadow-lift: 0 16px 36px rgba(20, 30, 35, 0.12);
+
+  /* Type — sans-only for a clean, energetic, modern feel */
+  --serif: "Sora", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --max-width: 1180px;
+
+  --fg: var(--text);
+  --fg-muted: var(--text-secondary);
+}
+
